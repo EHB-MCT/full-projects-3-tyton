@@ -4,7 +4,7 @@
 
 	margin: 0%;
 	height: auto;
-	overflow-y: hidden;
+	overflow: hidden;
 
 	font-family: Helvetica, sans-serif;
 }
@@ -13,6 +13,12 @@
 /***************************/
 /*********Navigatie*********/
 /***************************/
+.fas, .fab{
+	color: black;
+}
+.active{
+	color: #4B7F6C;
+}
 
 ul {
     list-style: none;
@@ -39,9 +45,20 @@ nav {
     align-items: flex-end;
     width: 100%;
 }
+
 #drop{
     display: none;
 }
+.fa-chevron-down{
+	transform: rotate(0deg);
+	transition: transform 0.3s linear;
+}
+  
+.fa-chevron-down.open{
+	transform: rotate(180deg);
+	transition: transform 0.3s linear;
+}
+
 .toggle + a,
 .menu {
     display: none;
