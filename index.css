@@ -1,11 +1,14 @@
 * {
-    font-family: Helvetica, sans-serif;
-    font-size: 16pt;
+	font-family: Helvetica, sans-serif;
+	font-size: 16pt;
 
-    margin: 0%;
+	margin: 0%;
+	height: auto;
+	overflow: hidden y;
 
-    font-family: Helvetica, sans-serif;
+	font-family: Helvetica, sans-serif;
 }
+
 
 /***************************/
 /*********Navigatie*********/
@@ -19,61 +22,62 @@ a {
 [id^=drop] {
 	display: none;
 }
+
 /* Since we'll have the "ul li" "float:left"
  * we need to add a clear after the container. */
 
 nav:after {
-	content:"";
-	display:table;
-	clear:both;
-    
+	content: "";
+	display: table;
+	clear: both;
+
 }
 
 /* Removing padding, margin and "list-style" from the "ul",
  * and adding "position:reltive" */
 nav ul {
 	float: right;
-	padding:0;
-	margin:0;
+	padding: 0;
+	margin: 0;
 	list-style: none;
 	position: relative;
 }
-	
+
 /* Positioning the navigation items inline */
 nav ul li {
 	margin: 0px;
-	display:inline-block;
+	display: inline-block;
 	float: left;
 }
 
 /* Styling the links */
 nav a {
-	display:block;
-	padding:14px 20px;	
-	color:black;
-	font-size:17px;
-	text-decoration:none;
+	display: block;
+	padding: 14px 20px;
+	color: black;
+	font-size: 17px;
+	text-decoration: none;
 }
 
 /* Hide Dropdowns by Default
  * and giving it a position of absolute */
 nav ul ul {
 	display: none;
-	position: absolute; 
+	position: absolute;
 	/* has to be the same number as the "line-height" of "nav a" */
-	top: 60px; 
+	top: 60px;
 }
-	
+
 /* Display Dropdowns on Hover */
-nav ul li:hover > ul {
-	display:inherit;
+nav ul li:hover>ul {
+	display: inherit;
 }
-	
+
 /* Fisrt Tier Dropdown */
 nav ul ul li {
-	width:170px;
-	float:none;
-	display:list-item;
+	width: 170px;
+	float: none;
+	display: list-item;
 	position: relative;
 }
 
@@ -83,97 +87,103 @@ nav ul ul li {
 */
 nav ul ul ul li {
 	position: relative;
-	top:-60px;
-	/* has to be the same number as the "width" of "nav ul ul li" */ 
-	left:170px; 
+	top: -60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */
+	left: 170px;
 }
 
-	
+
 /* Change ' +' in order to change the Dropdown symbol */
-li > a:after { content:  ' +'; }
-li > a:only-child:after { content: ''; }
+li>a:after {
+	content: ' +';
+}
+
+li>a:only-child:after {
+	content: '';
+}
 
 
 nav {
 	margin: 0;
-    padding: 0;
-    width: 75%;
+	padding: 0;
+	width: 75%;
+	position: absolute;
 }
 
-	/* Hide the navigation menu by default */
-	/* Also hide the  */
-.toggle + a,
+/* Hide the navigation menu by default */
+/* Also hide the  */
+.toggle+a,
 .menu {
 	display: none;
 }
 
-	/* Stylinf the toggle lable */
+/* Stylinf the toggle lable */
 .toggle {
 	display: block;
-	padding:14px 20px;	
-	color:black;
-	font-size:17px;
-	text-decoration:none;
-	border:none;
-    float: right;
+	padding: 14px 20px;
+	color: black;
+	font-size: 17px;
+	text-decoration: none;
+	border: none;
+	float: right;
 }
 
-	/* Display Dropdown when clicked on Parent Lable */
-	[id^=drop]:checked + ul {
-		display: block;
-	}
+/* Display Dropdown when clicked on Parent Lable */
+[id^=drop]:checked+ul {
+	display: block;
+}
 
-	/* Change menu item's width to 100% */
-	nav ul li {
-		display: block;
-		width: 100%;
-		}
+/* Change menu item's width to 100% */
+nav ul li {
+	display: block;
+	width: 100%;
+}
 
-	nav ul ul .toggle,
-	nav ul ul a {
-		padding: 0 40px;
-	}
+nav ul ul .toggle,
+nav ul ul a {
+	padding: 0 40px;
+}
 
-	nav ul ul ul a {
-		padding: 0 80px;
-	}
+nav ul ul ul a {
+	padding: 0 80px;
+}
 
-	nav a:hover,
- 	nav ul ul ul a {
-		background-color: #000000;
-	}
-  
+nav a:hover,
+nav ul ul ul a {
+	background-color: #000000;
+}
+
 nav ul li ul li .toggle,
 nav ul ul a,
-nav ul ul ul a{
-	padding:14px 20px;	
-	color:#FFF;
-	font-size:17px; 
+nav ul ul ul a {
+	padding: 14px 20px;
+	color: #FFF;
+	font-size: 17px;
 }
-  
-  
+
+
 nav ul li ul li .toggle,
 nav ul ul a {
-	background-color: #212121; 
+	background-color: #212121;
 }
 
 /* Hide Dropdowns by Default */
 nav ul ul {
 	float: none;
-	position:static;
+	position: static;
 	color: #ffffff;
 	/* has to be the same number as the "line-height" of "nav a" */
 }
-		
+
 /* Hide menus on hover */
-nav ul ul li:hover > ul,
-nav ul li:hover > ul {
+nav ul ul li:hover>ul,
+nav ul li:hover>ul {
 	display: none;
 }
 
 nav ul ul ul li {
 	position: static;
-	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	/* has to be the same number as the "width" of "nav ul ul li" */
 
 
 }
@@ -182,102 +192,105 @@ nav ul ul ul li {
 /*****Invoeren teamnaam*****/
 /***************************/
 button {
-    border: none;
+	border: none;
 }
 
 #submitTeamName {
-    background-color: none;
+	background-color: none;
 }
 
 .arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
 }
 
 .right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
 }
-.trainWorldLogo img{
-    margin: 5%;
+
+.trainWorldLogo img {
+	margin: 5%;
 }
 
 #teamNaamBlock {
-    padding-top: 70%;
-    margin-left: 10%;
+	padding-top: 70%;
+	margin-left: 0.5em;
 }
-#teamNaamBlock h1{
-    padding-bottom: 1em;
+
+#teamNaamBlock h1 {
+	padding-bottom: 1em;
 }
+
 .bridgeBottomScreen {
-    padding-top: 89vw;
-    margin-left: -15%;
+	padding-top: 80vw;
+	margin-left: -15%;
 }
 
 .trainBottomScreen {
-    position: absolute;
-    animation: run 5s ease-in-out infinite;
-    padding-bottom: 20%;
+	position: absolute;
+	animation: run 5s ease-in-out infinite;
+	padding-bottom: 20%;
 }
 
 @keyframes run {
-    0% {
-        left: -50vw;
-        bottom: -50%;
+	0% {
+		left: -50vw;
+		bottom: -50%;
 
 
-    }
+	}
 
-    10% {
+	10% {
 
-        bottom: +0.5%;
-    }
+		bottom: +0.5%;
+	}
 
-    20% {
+	20% {
 
-        bottom: -0.5%;
-    }
+		bottom: -0.5%;
+	}
 
-    30% {
+	30% {
 
-        bottom: +0.5%;
-    }
+		bottom: +0.5%;
+	}
 
-    40% {
+	40% {
 
-        bottom: -0.5%;
-    }
+		bottom: -0.5%;
+	}
 
-    50% {
+	50% {
 
-        bottom: +0.5%;
-    }
+		bottom: +0.5%;
+	}
 
-    60% {
+	60% {
 
-        bottom: -0.5%;
-    }
+		bottom: -0.5%;
+	}
 
-    70% {
+	70% {
 
-        bottom: +0.5%;
-    }
+		bottom: +0.5%;
+	}
 
-    80% {
+	80% {
 
-        bottom: -0.5%;
-    }
+		bottom: -0.5%;
+	}
 
-    90% {
+	90% {
 
-        bottom: +0.5%;
-    }
+		bottom: +0.5%;
+	}
 
-    100% {
-        left: 150VW;
-        bottom: -50%;
+	100% {
+		left: 150VW;
+		bottom: -50%;
 
-    }
+	}
 }
