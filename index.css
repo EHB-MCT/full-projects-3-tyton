@@ -1,14 +1,10 @@
 * {
 	font-family: Helvetica, sans-serif;
 	font-size: 16pt;
-
 	margin: 0%;
 	height: auto;
-	overflow: hidden;
-
-	font-family: Helvetica, sans-serif;
+	overflow-y: hidden;
 }
-
 
 /***************************/
 /*********Navigatie*********/
@@ -109,24 +105,20 @@ button {
 	margin: 5%;
 }
 
-#teamNaamBlock {
-	padding-top: 70%;
-	margin-left: 0.5em;
-}
-
 #teamNaamBlock h1 {
 	padding-bottom: 1em;
 }
 
-.bridgeBottomScreen {
-	padding-top: 80vw;
-	margin-left: -15%;
+#imageBottomContainer{
+	overflow-x: hidden;
+	position: absolute;
+  	bottom: 10%;
 }
 
 .trainBottomScreen {
 	position: absolute;
 	animation: run 5s ease-in-out infinite;
-	padding-bottom: 20%;
+	bottom: 30%;
 }
 
 @keyframes run {
