@@ -91,7 +91,7 @@ button {
 	border-radius: 20pt;
 	padding: 4%;
 	margin-left: 68%;
-	margin-top: 2%;
+	margin-top: 3%;
 }
 
 .arrow {
@@ -107,7 +107,6 @@ button {
 }
 
 #inputTeamName{
-	margin-top: 30%;
 	margin-left: 12%;
 	align-items: center;
     padding: 1.2vh 0vh;
@@ -116,28 +115,33 @@ button {
     padding-left: 2%;
 }
 
+/*****************************/
+/**********H1 + logo**********/
+/*****************************/
+#teamNaamBlock h1 {
+	font-size: 30pt;
+	padding-bottom: 1em;
+	margin: 5% 0% 8% 10%;
+}
+.trainWorldLogo img {
+	margin: 5% 0 12% 5%;
+}
+
+
 
 /*****************************/
 /****Trein onderkant pagina***/
 /*****************************/
-.trainWorldLogo img {
-	margin: 5%;
-}
-
-#teamNaamBlock h1 {
-	padding-bottom: 1em;
-}
-
 #bridgeBottomContainer{
 	overflow-x: hidden;
 	position: absolute;
-  	bottom: 5%;
+  	bottom: 8%;
 }
 
 #trainBottomContainer{
 	position: absolute;
-  	bottom: 30%;
-	top: 59%;
+  	bottom: 33%;
+	top: 1%;
 	width: -webkit-fill-available;
 	overflow-x: hidden;
 
