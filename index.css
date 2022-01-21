@@ -6,6 +6,14 @@
 	overflow-y: hidden;
 }
 
+/* width: 100%;
+    margin: 8% 0%;
+    padding: 1.2vh 0vh;
+    border-radius: 25px;
+    border: #ffffff; 
+	background-color: #ffffff;
+    padding-left: 5%;
+
 /***************************/
 /*********Navigatie*********/
 /***************************/
@@ -101,6 +109,9 @@ button {
 	-webkit-transform: rotate(-45deg);
 }
 
+/*****************************/
+/****Trein onderkant pagina***/
+/*****************************/
 .trainWorldLogo img {
 	margin: 5%;
 }
@@ -118,7 +129,7 @@ button {
 #trainBottomContainer{
 	position: absolute;
   	bottom: 35%;
-	  height: 59%;
+	  top: 59%;
 	  width: -webkit-fill-available;
 	  overflow-x: hidden;
 
