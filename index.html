@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
     <title>12 on track</title>
 </head>
 
@@ -15,14 +15,16 @@
 
     <!-- navigatie -->
     <!-- https://codepen.io/andornagy/pen/RNeydj begin -->
-    <nav>
-        <label for="drop" class="toggle"><i class="fas fa-chevron-down"></i></label>
-        <input type="checkbox" id="drop" />
+    <nav style="display: none;">
+        <div id="topNav">
+            <label id="container" for="drop" class="toggle"><i id="icon" class="fas fa-chevron-down"></i></label>
+            <input type="checkbox" id="drop" />
             <ul class="menu">
-                <li><a href="#"><i class="fas fa-home"></i></a></li>
+                <li><a href="#"><i class="fas fa-home active"></i></a></li>
                 <li><a href="./html-pages/quests.html"><i class="fab fa-elementor"></i></a></li>
                 <li><a href="./html-pages/info.html"><i class="fas fa-info"></i></a></li>    
             </ul>
+        </div>
     </nav>
     <!-- https://codepen.io/andornagy/pen/RNeydj eind -->
     
@@ -32,16 +34,19 @@
     <section id="teamNaamBlock">
 
 
-        <h1>Vul je teamnaam in</h1>
+        <h1>Vul je <br> teamnaam in</h1>
         <form id="invoerTeamnaam">
-            <input type="text" id="inputTeamName" placeholder="De Badeendjes, Locomotiefjes, ...">
+            <input type="text" id="inputTeamName" placeholder="De Badeendjes, ...">
             <button type="submit" id="submitTeamName"><i class="arrow right"></i></button>
         </form>
 
-        <div id="testContainer">
+        <div id="trainBottomContainer">
             <img class="trainBottomScreen" src="./img/train-loading-screen.svg" alt="train-loading-screen">
+        </div>
+        <div id="bridgeBottomContainer">
             <img class="bridgeBottomScreen" src="./img/bridge-loading-screen.svg" alt="bridge-loading-screen">
         </div>
+        
     </section>
 
     <!-- Loadingscreen while waiting -->
