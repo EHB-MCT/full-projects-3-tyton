@@ -118,11 +118,15 @@ button {
 #trainBottomContainer{
 	position: absolute;
   	bottom: 35%;
+	  height: 59%;
+	  width: -webkit-fill-available;
+	  overflow-x: hidden;
+
 }
 .trainBottomScreen {
 	position: absolute;
 	animation: run 5s ease-in-out infinite;
-	bottom: 25%;
+	bottom: 75%;
 }
 
 @keyframes run {
@@ -131,34 +135,34 @@ button {
 		bottom: -50%;
 	}
 	10% {
-		bottom: +0.5%;
+		bottom: +0.8%;
 	}
 	20% {
-		bottom: -0.5%;
+		bottom: -0.8%;
 	}
 	30% {
-		bottom: +0.5%;
+		bottom: +0.8%;
 	}
 	40% {
-		bottom: -0.5%;
+		bottom: -0.8%;
 	}
 	50% {
-		bottom: +0.5%;
+		bottom: +0.8%;
 	}
 	60% {
-		bottom: -0.5%;
+		bottom: -0.8%;
 	}
 	70% {
-		bottom: +0.5%;
+		bottom: +0.8%;
 	}
 	80% {
-		bottom: -0.5%;
+		bottom: -0.8%;
 	}
 	90% {
-		bottom: +0.5%;
+		bottom: +0.8%;
 	}
 	100% {
-		left: 120VW;
+		left: 110VW;
 		bottom: -50%;
 	}
 }
