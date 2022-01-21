@@ -1,0 +1,45 @@
+.parts {
+  width: 100vw;
+  height: 50vh;
+  margin-top: 20vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.part {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 20px 0;
+}
+
+.number,
+.circle,
+.text {
+  margin: 0 10px;
+  display: flex;
+  align-self: center;
+}
+
+.text {
+  font-size: 14px;
+  padding: 10px;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+
+
+.active {
+  background-color: green;
+}
