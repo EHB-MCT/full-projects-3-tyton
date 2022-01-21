@@ -6,14 +6,6 @@
 	overflow-y: hidden;
 }
 
-/* width: 100%;
-    margin: 8% 0%;
-    padding: 1.2vh 0vh;
-    border-radius: 25px;
-    border: #ffffff; 
-	background-color: #ffffff;
-    padding-left: 5%;
-
 /***************************/
 /*********Navigatie*********/
 /***************************/
@@ -94,20 +86,36 @@ button {
 }
 
 #submitTeamName {
-	background-color: none;
+	display: flex;
+	align-items: center;
+	border-radius: 20pt;
+	padding: 4%;
+	margin-left: 68%;
+	margin-top: 2%;
 }
 
 .arrow {
 	border: solid black;
-	border-width: 0 3px 3px 0;
+	border-width: 0 5px 5px 0;
 	display: inline-block;
-	padding: 3px;
+	padding: 4px;
 }
 
 .right {
 	transform: rotate(-45deg);
 	-webkit-transform: rotate(-45deg);
 }
+
+#inputTeamName{
+	margin-top: 30%;
+	margin-left: 12%;
+	align-items: center;
+    padding: 1.2vh 0vh;
+    border-radius: 25px;
+	background-color: #ffffff;
+    padding-left: 2%;
+}
+
 
 /*****************************/
 /****Trein onderkant pagina***/
@@ -123,15 +131,15 @@ button {
 #bridgeBottomContainer{
 	overflow-x: hidden;
 	position: absolute;
-  	bottom: 10%;
+  	bottom: 5%;
 }
 
 #trainBottomContainer{
 	position: absolute;
-  	bottom: 35%;
-	  top: 59%;
-	  width: -webkit-fill-available;
-	  overflow-x: hidden;
+  	bottom: 30%;
+	top: 59%;
+	width: -webkit-fill-available;
+	overflow-x: hidden;
 
 }
 .trainBottomScreen {
