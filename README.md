@@ -10,3 +10,8 @@ https://we.tl/t-bPnzlq512N
 ## Front-end
 ### knoppen   
 https://ehb.sharepoint.com/:u:/r/sites/MCT.FullProjectsIII2021-22-TWtype12-Tyton/Gedeelde%20documenten/TW%20type%2012%20-%20Tyton/sprint2/unity%20sacha%2027-01-2022.zip?csf=1&web=1&e=enIZCc
+
+### design hoofdtelefoon + camera met conducteur
+
+
+### design hoofdpagina
