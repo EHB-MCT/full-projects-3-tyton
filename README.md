@@ -16,3 +16,6 @@ https://ehb.sharepoint.com/:u:/r/sites/MCT.FullProjectsIII2021-22-TWtype12-Tyton
 
 ### design hoofdpagina
 https://we.tl/t-6rdGhS4ago
+
+### design info pagin's + about
+https://we.tl/t-gcMxQFrjKk
