@@ -18,4 +18,4 @@ https://ehb.sharepoint.com/:u:/r/sites/MCT.FullProjectsIII2021-22-TWtype12-Tyton
 https://we.tl/t-6rdGhS4ago
 
 ### design info pagin's + about
-https://we.tl/t-gcMxQFrjKk
+https://we.tl/t-1mcIZPJSNO
